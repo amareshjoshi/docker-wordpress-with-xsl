@@ -29,8 +29,13 @@ services:
        - WORDPRESS_DB_PASSWORD=${WORDPRESS_DB_PASSWORD}
        - WORDPRESS_DB_NAME=${WORDPRESS_DB_NAME}
        - WORDPRESS_DEBUG=${WORDPRESS_DEBUG}
+       #
+       # the extra newlines are needed so the defines 
+       # are on separate lines in the WP config file
+       - WORDPRESS_CONFIG_EXTRA=
+
+         define( 'WP_DEBUG_LOG', 'true' );
+
+         define( 'WP_DEBUG_DISPLAY', 'true' );
 volumes:
     db_data: {}
-
-
-
