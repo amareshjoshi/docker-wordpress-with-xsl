@@ -11,7 +11,7 @@ docker build --tag wordpress_with_xsl .
 ## To create and run a Docker configuration for WordPress development
 
 - Create folder `foo` for the project
-- Copy the `.env` and `docker-compose` files to `foo` and edit as needed
+- Copy the `.env` and `docker-compose.yml` files to `foo` and edit as needed
 - Create a folder `foo/wp` to contain the WordPress source files
 - Run: `docker-compose up -d`
 
